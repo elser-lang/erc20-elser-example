@@ -16,18 +16,6 @@
    )  
   ))
 
-(storage
- (:external
-  (
-   (def totalSupply (-> (:u256)))
-   (def balanceOf (-> (map :addr :u256)))
-   (def allowance (-> (map :addr (map :addr :u256))))
-   (def decimals (-> (:u256)))
-   
-   (def distributor (-> (:addr)))
-   )  
-  ))
-
 
 (constants
  (:internal
